@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ArtistCell" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="ArtistCell" customModule="MEdiaFinder_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d75-kS-plR">
+                        <rect key="frame" x="15" y="9.5" width="130" height="81"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="KOK-VJ-DT4"/>
+                            <constraint firstAttribute="height" constant="81" id="lka-X9-4Tt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track  Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmJ-ob-neG">
+                        <rect key="frame" x="170" y="11" width="128" height="20.5"/>
+                        <color key="backgroundColor" red="0.96830720309999996" green="1" blue="0.93670884139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paX-xT-pRH">
+                        <rect key="frame" x="170" y="46.5" width="128" height="20.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="paX-xT-pRH" secondAttribute="bottom" constant="32.5" id="2fb-Vy-Rr3"/>
+                    <constraint firstItem="d75-kS-plR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ave-5q-MTO"/>
+                    <constraint firstItem="d75-kS-plR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Vbv-2K-Lja"/>
+                    <constraint firstItem="fmJ-ob-neG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="WZo-zh-454"/>
+                    <constraint firstItem="fmJ-ob-neG" firstAttribute="leading" secondItem="d75-kS-plR" secondAttribute="trailing" constant="25" id="ZE7-NU-Zfd"/>
+                    <constraint firstItem="paX-xT-pRH" firstAttribute="leading" secondItem="d75-kS-plR" secondAttribute="trailing" constant="25" id="c0C-Yc-1Pi"/>
+                    <constraint firstItem="paX-xT-pRH" firstAttribute="trailing" secondItem="fmJ-ob-neG" secondAttribute="trailing" id="pHa-wG-wS3"/>
+                    <constraint firstItem="paX-xT-pRH" firstAttribute="top" secondItem="fmJ-ob-neG" secondAttribute="bottom" constant="15" id="qb7-30-np4"/>
+                    <constraint firstAttribute="trailing" secondItem="fmJ-ob-neG" secondAttribute="trailing" constant="20" id="uIQ-MY-4mb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistImage" destination="d75-kS-plR" id="9p3-qP-4yw"/>
+                <outlet property="artistNameLabel" destination="paX-xT-pRH" id="X5W-wJ-qVb"/>
+                <outlet property="trackNameLabel" destination="fmJ-ob-neG" id="94l-sM-FJ3"/>
+            </connections>
+            <point key="canvasLocation" x="-108.69565217391305" y="-276.5625"/>
+        </tableViewCell>
+    </objects>
+</document>
